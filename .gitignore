@@ -1,0 +1,23 @@
+# Match data is licensed for the competition only and must never be published.
+data/*
+!data/README.md
+*.mp4
+
+# Private ground truth (only the public 5-minute file is committed)
+*_possession_gt.csv
+*_possession_gt_meta.json
+
+# Local outputs: models, caches, per-frame files, submissions
+artifacts/
+submissions/
+evaluation/results/
+*.pdf
+
+# Python / editors
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store

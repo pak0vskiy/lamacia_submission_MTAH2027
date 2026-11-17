@@ -1,0 +1,21 @@
+[project]
+name = "mtah2027-possession"
+version = "0.1.0"
+description = "More than a Hack 2027, Phase 1: frame-level ball possession for BAR-ATH"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy",
+    "pandas",
+    "kloppy==3.18.0",
+    "matplotlib",
+    "scikit-learn>=1.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "notebook",
+    "pytest",
+]
+
+[tool.uv]
+package = false
